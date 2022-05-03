@@ -72,7 +72,7 @@ def scatter_plot():
 
     # Los datos en el archivo poblacion
     # no estan ordenados por año
-    with open('poblacion.csv') as fi:
+    with open('intro_matplotlib_python/poblacion.csv') as fi:
         data = csv.DictReader(fi)
         for line in data:
             years.append(int(line['year']))
@@ -103,7 +103,7 @@ def bar_plot():
 
     # Los datos en el archivo poblacion
     # no estan ordenados por año
-    with open('poblacion.csv') as fi:
+    with open('intro_matplotlib_python/poblacion.csv') as fi:
         data = csv.DictReader(fi)
         for line in data:
             year = int(line['year'])

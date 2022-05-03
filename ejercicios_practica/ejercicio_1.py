@@ -34,5 +34,14 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Cálculo de Exponencial', fontsize = 18)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y, c='navy', label='x^2')
+    ax.legend('x^2', fontsize= 14)
+    ax.set_facecolor('whitesmoke')
+    ax.grid('solid')
+    plt.show()
 
     print("terminamos")

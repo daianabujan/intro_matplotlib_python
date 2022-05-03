@@ -34,4 +34,14 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Tangente hiperbólica', fontsize = 18)
+    ax = fig.add_subplot()
+
+    ax.scatter(x, y, c='darkmagenta', label='y=tanh(x)')
+    ax.legend(fontsize= 14)
+    ax.set_facecolor('lavender')
+    ax.grid(ls='solid')
+    plt.show()
+
     print("terminamos")

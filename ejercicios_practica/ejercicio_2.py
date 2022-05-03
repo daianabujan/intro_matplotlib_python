@@ -46,4 +46,15 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Cálculo de Exponenciales', fontsize = 18)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y1, c='cyan', label='x^2')
+    ax.plot(x, y2, c='orange', label='x^3')
+    ax.legend(fontsize= 14)
+    ax.set_facecolor('ghostwhite')
+    ax.grid(ls='dashdot')
+    plt.show()
+
     print("terminamos")
